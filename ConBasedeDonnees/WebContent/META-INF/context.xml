@@ -4,6 +4,6 @@
   			auth="Container" type="javax.sql.DataSource"
                username="sa" password="" 
                driverClassName="org.h2.Driver"
-               url="jdbc:h2:~/test"/>
+               url="jdbc:h2:~/aliment"/>
 
 </Context>
