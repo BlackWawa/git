@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="TP Student EXMPLE TABLEAU LISTE">
+        <wb-resource deploy-path="/" source-path="/WebContent" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/util"/>
+        <property name="context-root" value="TP_Student"/>
+        <property name="java-output-path" value="/TP Student EXMPLE TABLEAU LISTE/build/classes"/>
+    </wb-module>
+</project-modules>
