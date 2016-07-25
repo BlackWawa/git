@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>BONJOUR et BIENVENUE sur TORRENTS</h1>
+
+	<h:form>
+		<h3>Creer un nouveau compte</h3>
+		<br></br>
+
+		<h4> Nouveau Utilisateur</h4>
+		<h:inputText value="#{login.id}"></h:inputText>
+		<br></br>
+		<h4> Nouveau Password</h4>
+		<h:inputSecret value="#{login.pwd}"></h:inputSecret>
+		<br></br>
+		<br></br>
+
+		<h:commandLink action="index" value="J'ai déja un compte ici."></h:commandLink>
+		
+
+
+
+
+	</h:form>
+
+</body>
+</html>
