@@ -31,6 +31,7 @@ public class ClientDAO {
 		return instance;
 	}
 
+
 	public ClientDAO(DataSource dataSource, String jndiName) {
 		super();
 		this.dataSource = dataSource;
@@ -72,7 +73,7 @@ public class ClientDAO {
 			while (myRs.next()) {
 				cl.add(new Client(myRs.getInt("id"), myRs.getString("nom"), myRs.getString("prenom"),
 						myRs.getString("ville")));
-				System.out.println(cl);
+				// System.out.println(cl);
 			}
 		} catch (Exception exc) {
 			exc.printStackTrace();
@@ -82,7 +83,7 @@ public class ClientDAO {
 		return cl;
 	}
 
-	public void addCLient(Client cl) throws SQLException {
+	public String addCLient(Client cl) throws SQLException {
 		Connection myConn = null;
 		PreparedStatement myStmt = null;
 
@@ -104,7 +105,8 @@ public class ClientDAO {
 		} finally {
 			// TODO Auto-generated catch block
 			myConn.close();
-		}
 
+		}
+		return "index";
 	}
 }

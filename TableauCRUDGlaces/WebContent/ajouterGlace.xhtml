@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://xmlns.jcp.org/jsf/html"
+	xmlns:f="http://xmlns.jcp.org/jsf/core"
+	xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<title>INDEX</title>
+</head>
+<h:body>
+	<h:form>
+
+		<h1>Ajouter une glace dans la liste</h1>
+		<br></br>
+
+Type cornet
+	<br></br>
+	<h:inputText value="#{glace.typeCornet}"></h:inputText>
+		<br></br>
+Nombres de boules	<br></br>
+<h:inputText value="#{glace.nbBoules}"></h:inputText>
+		<br></br>
+Parfum	<br></br>
+<h:inputText value="#{glace.parfum}"></h:inputText>
+		<br></br>
+
+		<h:commandButton value="Ajouter la glace" action="index"></h:commandButton>
+		<br></br>
+
+		<!-- 		<h:dataTable value="#{init.gl}" var="glace" headerClass="header" -->
+		<!-- 			rowClasses="row"> -->
+
+		<!-- 			<h:column> -->
+		<!-- 				<f:facet name="header">ID</f:facet> -->
+		<!-- 			#{glace.id} -->
+		<!-- 		</h:column> -->
+		<!-- 			<h:column> -->
+		<!-- 				<f:facet name="header">Type Cornet</f:facet> -->
+		<!-- 			#{glace.typeCornet} -->
+		<!-- 		</h:column> -->
+
+		<!-- 			<h:column> -->
+		<!-- 				<f:facet name="header">Nombre de boules</f:facet> -->
+		<!-- 			#{glace.nbBoules} -->
+		<!-- 		</h:column> -->
+
+		<!-- 			<h:column> -->
+		<!-- 				<f:facet name="header">Parfum</f:facet> -->
+		<!-- 			#{glace.parfum} -->
+		<!-- 			</h:column> -->
+
+		<!-- 		</h:dataTable> -->
+
+		<!-- 		<h:commandButton value="Ajouter une glace" action="ajouterGlace">Ajouter glace</h:commandButton> -->
+
+	</h:form>
+</h:body>
+</html>

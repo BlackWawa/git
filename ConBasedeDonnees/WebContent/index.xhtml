@@ -6,29 +6,34 @@
 <h:head>
 </h:head>
 <h:body>
-	<h:dataTable value="#{clientController.listClient}" var="client"
-		headerClass="header" rowClasses="row">
+	<h:form>
+		<h:dataTable value="#{clientController.listClient}" var="client"
+			headerClass="header" rowClasses="row">
 
-		<h:column>
-			<f:facet name="header">Id client</f:facet>
+			<h:column>
+				<f:facet name="header">Id client</f:facet>
 #{client.id}
 </h:column>
-		<h:column>
-			<f:facet name="header">Nom client</f:facet>
+			<h:column>
+				<f:facet name="header">Nom client</f:facet>
 #{client.nom}
 </h:column>
-		<h:column>
-			<f:facet name="header">Prenom client</f:facet>
+			<h:column>
+				<f:facet name="header">Prenom client</f:facet>
 #{client.prenom}
 </h:column>
-		<h:column>
-			<f:facet name="header">Adresse ville</f:facet>
+			<h:column>
+				<f:facet name="header">Adresse ville</f:facet>
 #{client.ville}
 </h:column>
 
-	</h:dataTable>
 
-	<h:commandButton value="CREER" action="creerClient"></h:commandButton>
+		</h:dataTable>
 
+		<h:commandLink value="CREER UN NOUVEAU CLIENT" action="#{clientDAO.pageCreerClient}" />
+		<h:commandButton value="CREER UN NOUVEAU CLIENT" action="creerClient" />
+
+
+	</h:form>
 </h:body>
 </html>

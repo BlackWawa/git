@@ -9,25 +9,19 @@
 
 	<h:form>
 		<h2>Ajouter CLIENT</h2>
-		<h:inputText value="#{}"> ID</h:inputText>
+		<h:inputText value="#{client.id}"> ID</h:inputText>
 		<br />
 		<h2>Ajouter NOM</h2>
-		<h:inputText value="#{}"> NOM</h:inputText>
+		<h:inputText value="#{client.nom}"> NOM</h:inputText>
 		<br />
 		<h2>Ajouter PRENOM</h2>
-		<h:inputText value="#{}">PRENOM</h:inputText>
+		<h:inputText value="#{client.prenom}">PRENOM</h:inputText>
 		<br />
 		<h2>Ajouter VILLE</h2>
-		<h:inputText value="#{}">VILLE</h:inputText>
+		<h:inputText value="#{client.ville}">VILLE</h:inputText>
 		<br />
-
-		<h:commandButton value="Retour à l'accueil" action="index"></h:commandButton>
-
-
-
-
-
-
+		<h:commandButton value="Retour à l'accueil"
+			action="#{clientDAO.addCLient}"></h:commandButton>
 
 	</h:form>
 </h:body>
